@@ -19,7 +19,7 @@ namespace RealHouzing.ApiLayer.Controllers
             var values = _categoryService.TGetList();
             return Ok(values);
         }
-        [HttpDelete]
+        [HttpDelete] 
         public IActionResult Delete(int id) 
         {
             var value = _categoryService.TGetByID(id);
